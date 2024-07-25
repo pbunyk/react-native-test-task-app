@@ -4,8 +4,8 @@
   "private": true,
   "scripts": {
     "// --- develop --- //": "",
-    "bootstrap": "bun i && cd ios && npx pod install && cd ../",
-    "prestart": "bun adb",
+    "bootstrap": "yarn i && cd ios && npx pod install && cd ../",
+    "prestart": "yarn adb",
     "start": "react-native start",
     "adb": "(adb reverse tcp:8081 tcp:8081 || true) && (adb reverse tcp:7007 tcp:7007 || true) && (adb reverse tcp:3000 tcp:3000 || true)",
     "android": "adb shell pm uninstall --user 0 com.tasa ; react-native run-android --variant=devDebug",
@@ -20,7 +20,7 @@
     "// --- linters and formatters --- //": "",
     "lint": "eslint . --ext ts,tsx --fix --no-error-on-unmatched-pattern --report-unused-disable-directives --max-warnings 0",
     "format": "prettier --write '**/*.(ts|tsx)'",
-    "validate": "tsc && bun lint && pretty-quick --staged",
+    "validate": "tsc && yarn lint && pretty-quick --staged",
     "prepare": "is-ci || husky install"
   },
   "dependencies": {
