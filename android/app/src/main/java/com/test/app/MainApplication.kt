@@ -1,4 +1,4 @@
-package com.xo.tours
+package com.test.app
 
 import android.app.Application
 import com.facebook.react.PackageList
