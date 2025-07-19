@@ -44,6 +44,6 @@ This test is to evaluate:
 
 ### Resources
 - [Figma Design Link](https://www.figma.com/design/eMcgoiZbYd1PH5FioYfeQt/Test-Task-React-Native-Developer-WD?node-id=1-138&t=Aovesqj5WVWzlIZo-1)
-- [API Base URL](https://test-task-server-production.up.railway.app/openApi)
+- [API Base URL](https://test-task-server-production-3257.up.railway.app/openApi)
 
 If you have any questions or need further clarification, feel free to reach out.
