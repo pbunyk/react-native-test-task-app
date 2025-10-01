@@ -2,12 +2,23 @@ module.exports = {
   presets: ['module:@react-native/babel-preset'],
   plugins: [
     [
-      'module-resolver',
+      require.resolve('babel-plugin-module-resolver'),
       {
-        root: ['./src'],
+        root: ['./'],
         alias: {
-          '@/screens': './src/screens',
+          '^~(.+)': './src/\\1',
+          '@tailwind': './tailwind.config.js',
         },
+        extensions: [
+          '.ios.js',
+          '.android.js',
+          '.js',
+          '.jsx',
+          '.json',
+          '.tsx',
+          '.ts',
+          '.native.js',
+        ],
       },
     ],
   ],

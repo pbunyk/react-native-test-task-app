@@ -1,5 +1,6 @@
 {
   "extends": "@react-native/typescript-config/tsconfig.json",
+  "include": ["src/**/*", "declarations.d.ts"],
   "strict": true,
   "compilerOptions": {
     "resolveJsonModule": true,
@@ -7,11 +8,10 @@
     "forceConsistentCasingInFileNames": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "baseUrl": "src",
+    "baseUrl": ".",
     "paths": {
-      "@screens/*": ["screens/*"],
-      "@screens": ["screens/index"],
-      "@api/*": ["common/api/*"],
+      "~*": ["./src/*"],
+      "@tailwind": ["./tailwind.config.js"]
     }
   }
 }
