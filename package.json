@@ -38,6 +38,7 @@
     "react-native-screens": "^3.32.0",
     "react-native-splash-screen": "^3.3.0",
     "react-native-svg": "15.2.0",
+    "react-native-toast-message": "^2.3.3",
     "twrnc": "^4.10.1"
   },
   "devDependencies": {

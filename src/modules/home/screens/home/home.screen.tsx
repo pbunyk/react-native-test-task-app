@@ -3,12 +3,12 @@ import { ActivityIndicator, FlatList, ListRenderItem, View } from 'react-native'
 
 import { IActivity, scale, tw, Txt, useAppInsets } from '~modules/common'
 import { ActivityItem } from '~modules/home/components'
-import { useActivities } from '~modules/home/hooks'
+import { useActivitiesQuery } from '~modules/home/hooks'
 
 export const HomeScreen: FC = () => {
   const insets = useAppInsets()
 
-  const { data = [], isLoading, refetch } = useActivities()
+  const { data = [], isLoading, refetch } = useActivitiesQuery()
 
   const renderItem = useCallback<ListRenderItem<IActivity>>(
     ({ item }) => <ActivityItem activity={item} />,

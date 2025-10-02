@@ -14,7 +14,7 @@ export const ButtonPrimary: FC<PropsWithChildren<IButtonPrimaryProps>> = ({
   disabled = false,
   loading = false,
 
-  txtMod = EFontDesign.Headline4,
+  txtMod = EFontDesign.LargeBody,
   txtColor = tw.color('text-white'),
 
   style = {},

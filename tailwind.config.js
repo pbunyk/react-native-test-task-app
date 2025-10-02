@@ -5,6 +5,7 @@ module.exports = {
       colors: {
         golden: '#FED138',
         'neural-10': '#F7F7F7',
+        'neural-15': '#F5F5F5',
         'neural-75': '#979797',
       },
       fontFamily: {

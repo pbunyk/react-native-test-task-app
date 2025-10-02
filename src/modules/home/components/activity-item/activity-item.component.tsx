@@ -1,7 +1,7 @@
 import { FC } from 'react'
-import { TouchableOpacity, View, Image } from 'react-native'
+import { TouchableOpacity, View } from 'react-native'
 
-import { Icon, scale, tw, Txt, useNav } from '~modules/common'
+import { FallbackImage, Icon, scale, tw, Txt, useNav } from '~modules/common'
 import { ERoutes } from '~modules/root/typing'
 
 import { IActivityItemProps } from './types'
@@ -10,7 +10,7 @@ export const ActivityItem: FC<IActivityItemProps> = ({ activity }) => {
   const nav = useNav()
 
   const navigateToActivity = () => {
-    nav.navigate(ERoutes.Details, { activityId: activity.id })
+    nav.navigate(ERoutes.Details, { activity })
   }
 
   return (
@@ -19,8 +19,8 @@ export const ActivityItem: FC<IActivityItemProps> = ({ activity }) => {
       style={tw`gap-1`}
       onPress={navigateToActivity}
     >
-      <Image
-        source={{ uri: activity.photoUrl }}
+      <FallbackImage
+        uri={activity.photoUrl}
         style={tw.style('w-full rounded-3xl', { height: scale(140) })}
         resizeMode="cover"
       />

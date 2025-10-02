@@ -6,7 +6,7 @@ import { EQuery, IActivity } from '~modules/common'
 
 import { getActivitiesReq } from '../api'
 
-export const useActivities = () => {
+export const useActivitiesQuery = () => {
   return useQuery<IActivity[], Error>({
     queryKey: [EQuery.Activities],
     queryFn: async () => {

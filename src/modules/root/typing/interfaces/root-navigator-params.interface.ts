@@ -1,9 +1,11 @@
 import { ParamListBase } from '@react-navigation/native'
 
+import { IActivity } from '~modules/common'
+
 import { ERoutes } from '../enums'
 
 export interface IDetailsScreenProps {
-  activityId: number
+  activity: IActivity
 }
 
 export interface IRootStackNavigatorParams extends ParamListBase {

@@ -18,28 +18,28 @@ const setFontTypeParams = () => ({
     lineHeight: scale(26, 24),
   },
   [EFontDesign.Headline3]: {
+    fontSize: scale(22, 20),
+    lineHeight: scale(24, 22),
+  },
+  [EFontDesign.Headline4]: {
     fontSize: scale(20, 18),
     lineHeight: scale(22, 20),
   },
-  [EFontDesign.Headline4]: {
-    fontSize: scale(16, 14),
-    lineHeight: scale(18, 16),
-  },
   [EFontDesign.Headline5]: {
-    fontSize: scale(14, 12),
-    lineHeight: scale(16, 14),
-  },
-  [EFontDesign.LargeBody]: {
     fontSize: scale(18, 16),
     lineHeight: scale(20, 18),
   },
-  [EFontDesign.Base]: {
+  [EFontDesign.LargeBody]: {
     fontSize: scale(16, 14),
     lineHeight: scale(18, 16),
   },
-  [EFontDesign.Small]: {
+  [EFontDesign.Base]: {
     fontSize: scale(14, 12),
     lineHeight: scale(16, 14),
+  },
+  [EFontDesign.Small]: {
+    fontSize: scale(12, 10),
+    lineHeight: scale(14, 12),
   },
   [EFontDesign.ExtraSmall]: {
     fontSize: scale(11, 9),

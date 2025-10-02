@@ -1,6 +1,7 @@
 import { AxiosResponse } from 'axios'
 
 import { api, IActivity } from '~modules/common'
+
 import { IPayloadAddFavorites } from './interfaces'
 
 const getActivitiesReq = (): Promise<AxiosResponse<IActivity[]>> =>
