@@ -8,7 +8,7 @@ import { useActivitiesQuery } from '~modules/home/hooks'
 export const HomeScreen: FC = () => {
   const insets = useAppInsets()
 
-  const { data = [], isLoading, refetch } = useActivitiesQuery()
+  const { data = [], isLoading = true, refetch } = useActivitiesQuery()
 
   const renderItem = useCallback<ListRenderItem<IActivity>>(
     ({ item }) => <ActivityItem activity={item} />,
@@ -16,7 +16,7 @@ export const HomeScreen: FC = () => {
   )
 
   const renderListEmptyComponent = () => (
-    <View style={tw`grow items-center justify-center`}>
+    <View style={tw`grow items-center justify-center bg-white`}>
       <Txt>No activities found</Txt>
     </View>
   )

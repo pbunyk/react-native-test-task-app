@@ -1,7 +1,5 @@
 import { useSafeAreaInsets } from 'react-native-safe-area-context'
 
-import { scale } from '../helpers'
-
 interface IProps {
   top?: number
   bottom?: number
@@ -20,9 +18,9 @@ export const useAppInsets = ({
   const bottomInset = insets.bottom || bottom
 
   return {
-    top: scale(topInset),
+    top: topInset,
     right,
-    bottom: scale(bottomInset),
+    bottom: bottomInset,
     left,
   }
 }

@@ -13,6 +13,7 @@ export const useAddFavoritesMutation = () => {
     mutationFn: addToFavoritesReq,
     onSuccess: async () => {
       queryClient.invalidateQueries({ queryKey: [EQuery.Activities] })
+
       Toast.show({
         type: 'success',
         text1: 'Successfully added!',
